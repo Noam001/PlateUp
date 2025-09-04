@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PlateUp", ".", "{1F2D4FEF-E83C-4687-A171-97AD06ECE750}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_58556"
+		Debug.AspNetCompiler.PhysicalPath = "..\PlateUp\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58556\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_58556"
+		Release.AspNetCompiler.PhysicalPath = "..\PlateUp\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_58556\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58556"
+		SlnRelativePath = "..\PlateUp\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F2D4FEF-E83C-4687-A171-97AD06ECE750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F2D4FEF-E83C-4687-A171-97AD06ECE750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8B30292-6A39-4CDB-AEEF-C0530A6FDE75}
+	EndGlobalSection
+EndGlobal

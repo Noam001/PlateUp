@@ -1,0 +1,22 @@
+﻿* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wraper {
+    width: 1440px;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+.header {
+    padding-top: 66px;
+    padding-bottom: 112px;
+    display: flex;
+    justify-content: end;
+}
+.item {
+    display: inline;
+    margin: 0 27.5px;
+}
+
