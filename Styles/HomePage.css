@@ -39,14 +39,41 @@
 }
 
 .description {
+    
     text-align: center;
+    font-size: 25px;
+    color: beige;
 }
 .Reviews {
+    font-family: 'Open Sans';
     margin-top: 550px;
     color: beige;
+    margin-left: 707px;
+
+}
+.reviewBox {
+    margin-left: 700px;
+    display: flex;
+    width: 400px;
+    background: #fff;
+    border: 2px solid #d8b89c;
+    border-radius: 25px;
+    padding: 5px 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+}
+.reviewInput {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 25px;
 }
 .Send {
     font-family: 'Open Sans';
     font-weight: bold;
-    display: block;
+    background: linear-gradient(45deg, #d8b89c, #fff);
+    padding: 11px 30px;
+    margin-left: 8px;
+    border-radius: 18px;
 }
