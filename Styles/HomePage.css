@@ -22,9 +22,13 @@
     font-family: 'Open Sans';
     font-weight: bold;
     color: white;
+    text-decoration: none;
 }
-
-.nav{
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav {
     margin-right: 100px;
 }
 .PlateUp {
@@ -48,11 +52,11 @@
     font-family: 'Open Sans';
     margin-top: 550px;
     color: beige;
-    margin-left: 707px;
+    margin-left: 55px;
 
 }
 .reviewBox {
-    margin-left: 700px;
+    margin-left: 50px;
     display: flex;
     width: 400px;
     background: #fff;
