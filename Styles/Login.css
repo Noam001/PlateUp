@@ -4,45 +4,76 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    height: 100vh;
+    background-image: url('../Photos/LoginBack.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .Login {
     width: 600px;
-    margin: 60px auto;
+    margin: 0 auto;
     border: 1px solid #c1c1c1;
-    padding: 30px;
+    padding: 80px 30px;
     box-shadow: 10px 10px 15px #888888;
+    background: linear-gradient(#ffffff34,#ffffff27);
+    backdrop-filter: blur(7px); 
 }
 .Title{
     text-align:center;
+    color: white;
+    font-family: Arial;
+    font-weight:700;
 }
 .field {
-    position: relative;
-    text-align: center;
-    width: 400px;
-    margin: 20px 0;
+    display:flex;
+    position: relative; 
+    width: 400px; 
+    margin: 40px 61px;
 }
-input {
-    width: 300px;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    box-sizing: border-box;
-}
+    .field input {
+        width: 100%;
+        font-size: 16px;
+        padding: 15px 40px 15px 20px;
+        border-radius: 25px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        box-sizing: border-box;
+    }
 .fields {
     list-style: none;
 }
 .icon {
-    position: absolute;
-    width: 19px;
-    top: 7px;
-    right: 36px;
-
+    position: absolute; 
+    top: 50%; 
+    right: 12px;
+    transform: translateY(-50%);
+    width: 25px; 
+    pointer-events: none;
+}
+.buttonLogin{
+    margin-left: 94px;
+    margin-right:6px;
 }
 button {
+    margin-top: 17px;
     width: 160px;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 14px;
+    border-radius: 17px;
+    font-size: 14px;
+    margin-bottom: 7px;
+    border: none;
 }
 .register-link {
-    text-align:center;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+.register-link a {
+    text-decoration:none;
+    color: #fff;
+    font-weight: bold;
 }
