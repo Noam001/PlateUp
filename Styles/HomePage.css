@@ -5,16 +5,24 @@
     box-sizing: border-box;
 }
 .wraper {
-    background-image: url('../Photos/Background.jpg');
+    background: linear-gradient(to bottom, #000000, #1a1715, #141210, #0b0b0b);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
+    padding-bottom: 60px;
 }
+.logo img {
+    width: 100px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+
 .header {
-    padding-top: 66px;
-    padding-bottom: 112px;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    padding: 2px 0;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 .item {
     display: inline;
@@ -22,7 +30,10 @@
     font-family: 'Open Sans';
     font-weight: bold;
     color: white;
-    text-decoration: none;
+    transition: 0.25s ease;
+}
+.item:hover {
+    color: #8F6947;  /* subtle elegant hover */
 }
 .nav a {
     text-decoration: none;
@@ -37,47 +48,76 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+    margin-top: 60px;
     font-family: Rubik;
     font-weight: 500;
-    font-size: 160px;
+    font-size: 180px;
 }
 
 .description {
-    
     text-align: center;
     font-size: 25px;
     color: beige;
 }
 .Reviews {
     font-family: 'Open Sans';
-    margin-top: 550px;
+    font-weight: bold;
     color: beige;
-    margin-left: 55px;
+    margin-left: 13px;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.ReviewBlock {
+    width: 470px;
+    margin-top: 260px;
 
 }
 .reviewBox {
-    margin-left: 50px;
     display: flex;
     width: 400px;
     background: #fff;
     border: 2px solid #d8b89c;
     border-radius: 25px;
-    padding: 5px 10px;
-    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    padding: 5px 7px;
 }
 .reviewInput {
     flex: 1;
     border: none;
     outline: none;
-    font-size: 16px;
-    padding: 8px;
-    border-radius: 25px;
+    background: transparent;
+    color: #f0e6d8;
+    font-size: 17px;
+    padding: 12px;
 }
+.reviewInput::placeholder {
+    color: #8e8377;
+}
+
 .Send {
-    font-family: 'Open Sans';
-    font-weight: bold;
-    background: linear-gradient(45deg, #d8b89c, #fff);
-    padding: 11px 30px;
+    padding: 10px 26px;
+    border-radius: 20px;
+    background-color: #3F3A36; /* dark espresso */
+    color: #F6EEE6; /* soft cream */
+    border: 1px solid #2C2927;
     margin-left: 8px;
-    border-radius: 18px;
+    color: white;
+}
+button:hover {
+    background-color: #8F6947; /* slightly darker */
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+.footer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ccc;
+    padding: 15px 0;
+    background: rgba(0, 0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    box-shadow: none;
 }

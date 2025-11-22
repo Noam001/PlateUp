@@ -6,23 +6,44 @@
     <title></title>
 </head>
 <body>
-    <form class="Login" method="post" action="#">
-        <h1 class="Title">Login</h1>
-        <ul class="fields">
-            <li class="field">
-                <input name="email" id="email" type="text" placeholder="Email" />
-                <img class="icon" src="../Photos/Email.png" />
-            </li>
-            <li class="field">
-                <input name="password" id="password" type="password" placeholder="Password" />
-                <img class="icon" src="../Photos/lock.png" />
-            </li>
-        </ul>
-        <button class="buttonLogin" type="submit">Login</button>
-        <button class="buttonReset" type="reset">Reset</button>
-        <div class="register-link">
-            <p>Don't have an account? <a href="Signup.html">Signup</a></p>
+    <header class="header">
+        <div class="logo">
+            <a href="HomePage.html">
+                <img src="../Photos/logo.png" alt="Restaurant Logo">
+            </a>
         </div>
-    </form>
+        <nav class="nav">
+            <ul class="navigation">
+                <li class="item"><a href="HomePage.html">H O M E</a></li>
+                <li class="item"><a href="Menu.html">M E N U</a></li>
+                <li class="item"><a href="TableReservation.html">T A B L E &#160 R E S E R V A T I O N</a></li>
+                <li class="item"><a href="Login.html">L O G I N</a></li>
+                <li class="item"><a href="Signup.html">S I G N U P</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-container">
+        <form class="Login" method="post" action="#">
+            <h1 class="Title">Login</h1>
+            <ul class="fields">
+                <li class="field">
+                    <input name="email" id="email" type="text" placeholder="Email" />
+                    <img class="icon" src="../Photos/Email.png" />
+                </li>
+                <li class="field">
+                    <input name="password" id="password" type="password" placeholder="Password" />
+                    <img class="icon" src="../Photos/lock.png" />
+                </li>
+            </ul>
+            <button class="buttonReset" type="reset">Reset</button>
+            <button class="buttonLogin" type="submit">Login</button>
+            <div class="register-link">
+                <p>Don't have an account? <a href="Signup.html">Signup</a></p>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <p class="rights">All Rights Reserved</p>
+    </footer>
 </body>
 </html>

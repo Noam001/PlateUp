@@ -3,20 +3,101 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+    <link href="../Styles/Menu.css" rel="stylesheet" />
+    <script src="../Java Script/Pagination.js"></script>
 </head>
 <body>
     <div class="wraper">
         <header class="header">
             <nav class="nav">
                 <ul class="navigation">
-                    <li class="item"><a href="">H O M E</a></li>
-                    <li class="item"><a href="Menu.html">M E N U</a></li>
-                    <li class="item"><a href="">T A B L E &#160 R E S E R V A T I O N</a></li>
-                    <li class="item"><a href="">L O G I N</a></li>
-                    <li class="item"><a href="">S I G N U P</a></li>
+                    <li class="nav-item"><a href="HomePage.html">H O M E</a></li>
+                    <li class="nav-item"><a href="Menu.html">M E N U</a></li>
+                    <li class="nav-item"><a href="TableReservation.html">T A B L E &#160 R E S E R V A T I O N</a></li>
+                    <li class="nav-item"><a href="Login.html">L O G I N</a></li>
+                    <li class="nav-item"><a href="Signup.html">S I G N U P</a></li>
                 </ul>
             </nav>
         </header>
+        <main class="main">
+            <div class="page-layout">               
+                <aside class="filters">
+                    <section class="search-section">
+                        <input type="text" placeholder="Search" class="search-bar">
+                    </section>
+                    <h3>Food Type</h3>
+                    <select name="foodType" id="foodType">
+                        <option value="">Select</option>
+                        <option value="starters">Starters</option>
+                        <option value="main">Main Course</option>
+                        <option value="dessert">Desserts</option>
+                        <option value="drinks">Drinks</option>
+                    </select>
+
+                    <h3>Price</h3>
+                    <div class="price-sort">
+                        <label><input type="radio" name="price" value="lowToHigh">Low to High</label><br>
+                        <label><input type="radio" name="price" value="highToLow">High to Low</label>
+                    </div>
+                </aside>
+                <!-- Menu items grid -->
+                <section class="menu-items">
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Margherita Pizza</p><p>$12</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Veggie Pizza</p><p>$14</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Pasta Rosa</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Ravioli Sweet Potato</p><p>$20</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Ravioli Cheese</p><p>$20</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Pasta Pomodoro</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Crème Brûlée</p><p>$15</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Chocolate Cake</p><p>$15</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Pavlova</p><p>$15</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Cheesecake</p><p>$15</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Mille-Feuille</p><p>$15</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Focaccina</p><p>$8</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Truffle Arancini</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Cloud Gnocchi</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Cheese Tortellini</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>French Fries</p><p>$8</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Potato Croquettes</p><p>$10</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Caesar Salad</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Fresh Garden Salad</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Greek Salad</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Panzanella Salad</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Caprese Burrata</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Avocado Salad</p><p>$18</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Coca Cola / Zero</p><p>$4</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Sprite</p><p>$4</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Fanta</p><p>$4</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Fuze Tea Peach</p><p>$4</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Flavored Water (Peach / Grape / Apple)</p><p>$4</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Water</p><p>$3</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Freshly Squeezed Orange Juice</p><p>$5</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Fresh Lemonade</p><p>$5</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Soda</p><p>$3</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Cappuccino</p><p>$4</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Hot Chocolate</p><p>$4</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Iced Coffee</p><p>$5</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Grilled Salmon Fillet</p><p>$24</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Fish & Chips</p><p>$20</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Sea Bass Fillet</p><p>$24</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Tilapia Fillet</p><p>$21</p></div></a>
+                    <a href=""><div class="item"><img src="../Photos/placeholder.png" alt=""><p>Pasta Cream</p><p>$18</p></div></a>
+                </section>
+            </div>
+            <section class="pagination">
+                <button>Prev</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>Next</button>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <p class="rights">All Rights Reserved</p>
+        </footer>
     </div>
 </body>
-</html>
+</html>  

@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../Styles/TableReservation.css" rel="stylesheet" />
+</head>
+<body>
+    <form class="TableReservation" method="post" action="#">
+        <h1 class="PlateUp">PlateUp</h1>
+        <h2 class="Title">Reserve a table</h2>
+        <ul class="fields">
+            <li class="field">
+                <input name="date" id="date" type="date" placeholder="Reservation Date" />
+            </li>
+            <li class="field">
+                <input name="time" id="time" type="time" placeholder="Reservation Time" />
+            </li>
+            <li class="field">
+                <select name="guests" id="guests">
+                    <option value="1">1 Guests</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="7">7 Guests</option>
+                    <option value="8">8 Guests</option>
+                    <option value="9">9 Guests</option>
+                    <option value="10">10 Guests</option>
+                </select>
+                <img src="../Photos/Guests.png" class="guest-icon" />
+            </li>
+        </ul>
+        <p class="reserve-text">
+            To reserve a table at PlateUp choose a date, time, and number of guests.
+        </p>
+        <button class="Reserve-Button" type="submit">Reserve a table</button>
+        <div class="Extra-Buttons">
+            <a href="Menu.html">Menu</a>
+            <a href="HomePage.html">Home</a>
+        </div>
+    </form>
+    <footer class="footer">
+        <p class="rights">All Rights Reserved</p>
+    </footer>
+</body>
+</html>

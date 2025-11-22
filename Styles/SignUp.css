@@ -1,9 +1,9 @@
-﻿* 
-{
+﻿* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background-color: #f5eadb;
     background-size: cover;
@@ -17,10 +17,10 @@ body {
     justify-content: center;
     align-items: center;
 }
-.Login {
+.Signup {
     width: 600px;
-    padding: 80px 30px;
-    margin-top: 110px;
+    padding: 60px 30px;
+    margin-top: 70px;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
     border-radius: 18px;
@@ -30,6 +30,7 @@ body {
     margin-left: 55px;
     cursor: pointer;
 }
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -37,16 +38,19 @@ body {
     align-items: center;
     border-bottom: 1px solid rgba(255,255,255,0.5);
 }
+
 .item {
     display: inline;
     margin: 0 27.5px;
     font-family: 'Open Sans';
     font-weight: bold;
-    color: #595149; 
+    color: #595149;
 }
+
 .item:hover {
-    color: #8F6947;  /* subtle elegant hover */
+    color: #8F6947; /* subtle elegant hover */
 }
+
 .nav a {
     text-decoration: none;
     color: inherit;
@@ -65,7 +69,7 @@ body {
     display: flex;
     position: relative;
     width: 400px;
-    margin: 28px auto; /* centers nicely instead of pushing right */
+    margin: 24px auto;
 }
 .field input {
     width: 100%;
@@ -74,6 +78,7 @@ body {
     padding: 14px 42px 14px 20px;
     border-radius: 12px;
     border: 1px solid #d9d9d9;
+    box-shadow: none;
     background: #fafafa;
     transition: all 0.25s ease;
     box-sizing: border-box;
@@ -81,11 +86,29 @@ body {
 .field input:focus {
     border-color: #000;
     background: #fff;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
     outline: none;
 }
 .fields {
     list-style: none;
+}
+select {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 16px;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    border-radius: 12px;
+    border: 1px solid #d9d9d9;
+    background: #fafafa;
+    box-shadow: none;
+    transition: all 0.25s ease;
+}
+
+select:focus {
+    border-color: #000;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+    outline: none;
 }
 .icon {
     position: absolute;
@@ -94,16 +117,26 @@ body {
     transform: translateY(-50%);
     width: 22px;
     opacity: 0.55;
-    transition: opacity 0.2s ease;
     pointer-events: none;
+    transition: opacity 0.2s ease;
 }
 
 .field input:focus + .icon {
     opacity: 0.9;
 }
-.buttonReset{
+.double-field {
+    display: flex;
+    width: 400px;
+    margin: 24px auto;
+    gap: 7px;
+}
+.double-field .field {
+    margin: 0;       /* remove default margin */
+    width: 100%;     /* each takes half of the space */
+}
+.buttonReset {
     margin-left: 94px;
-    margin-right:6px;
+    margin-right: 6px;
 }
 button {
     margin-top: 17px;
@@ -112,25 +145,28 @@ button {
     border-radius: 30px;
     font-size: 15px;
     font-weight: 600;
-    background-color: #3F3A36; /* dark espresso */
-    color: #F6EEE6; /* soft cream */
+    background-color: #3F3A36;
+    color: #F6EEE6;
     border: 1px solid #2C2927;
     letter-spacing: 0.5px;
     transition: 0.25s ease;
-}
-button:hover {
-    background-color: #8F6947; /* slightly darker */
-    transform: translateY(-2px);
     cursor: pointer;
 }
-.register-link {
-    margin-top: 15px;
+
+button:hover {
+    background-color: #8F6947;
+    transform: translateY(-2px);
+}
+.Login-link {
+    margin-top:13px;
     text-align: center;
     color: #595149;
     font-family: "Roboto Slab", "Times New Roman", serif;
+    font-weight: 500;
 }
-.register-link a {
-    text-decoration:none;
+
+.Login-link a {
+    text-decoration: none;
     color: #595149;
     font-weight: bold;
 }
@@ -141,7 +177,6 @@ button:hover {
     color: #ccc;
     padding: 15px 0;
     background: rgba(0, 0, 0, 0);
-    position: fixed;
     bottom: 0;
     width: 100%;
     backdrop-filter: blur(5px);
