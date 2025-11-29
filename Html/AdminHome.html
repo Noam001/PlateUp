@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="../Styles/AdminHome.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="AdminHomePage.html">
+                    <img src="../Photos/logo.png" alt="Restaurant Logo">
+                </a>
+            </div>
+            <t1 class="Title">PlateUp | Admin Panel</t1>
+            <button class="Logout" type="button">Logout</button>
+        </header>
+        <main class="main">
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <t3 class="Name">Admin User Name</t3>
+                <button class="side-btn active">View Reports</button>
+                <button class="side-btn">Manage Menu</button>
+                <button class="side-btn">Manage FoodTypes</button>
+                <button class="side-btn">Manage Orders</button>
+                <button class="side-btn">Manage Cities</button>
+                <button class="side-btn">Manage Reviews</button>
+            </aside>
+            <!-- MAIN CONTENT -->
+            <section class="content">
+                <h2 class="section-title">View Reports</h2>
+                <div class="reports-container">
+
+                    <!-- Orders & Income -->
+                    <div class="card">
+                        <h3>Orders & Income</h3>
+                        <label>Select Date:</label>
+                        <input type="date">
+                        <p>Orders: 10</p>
+                        <p>Income: 300$</p>
+                    </div>
+
+                    <!-- Favorite Meals -->
+                    <div class="card">
+                        <h3>Most Favorite Meals</h3>
+                        <ol>
+                            <li>Meal Name 1</li>
+                            <li>Meal Name 2</li>
+                            <li>Meal Name 3</li>
+                        </ol>
+                    </div>
+                    <!-- Least Favorite Meals -->
+                    <div class="card">
+                        <h3>Least Favorite Meals</h3>
+                        <ol>
+                            <li>Meal Name 1</li>
+                            <li>Meal Name 2</li>
+                            <li>Meal Name 3</li>
+                        </ol>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="rights">All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>

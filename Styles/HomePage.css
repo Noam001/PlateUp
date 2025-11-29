@@ -4,12 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wraper {
+.wrapper {
+    min-height: 100vh; /* גובה מינמלי של אלמנט יהיה בגבוה המלא של מסך */
     background: linear-gradient(to bottom, #000000, #1a1715, #141210, #0b0b0b);
     background-repeat: no-repeat;
     background-size: cover;
     margin: auto;
-    padding-bottom: 60px;
 }
 .logo img {
     width: 100px;
@@ -48,7 +48,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
-    margin-top: 60px;
+    margin-top: 70px;
     font-family: Rubik;
     font-weight: 500;
     font-size: 180px;
@@ -63,7 +63,7 @@
     font-family: 'Open Sans';
     font-weight: bold;
     color: beige;
-    margin-left: 13px;
+    margin-left: 24px;
     margin-bottom: 18px;
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
@@ -71,12 +71,12 @@
 .ReviewBlock {
     width: 470px;
     margin-top: 260px;
-
 }
 .reviewBox {
     display: flex;
     width: 400px;
     background: #fff;
+    margin-left: 13px;
     border: 2px solid #d8b89c;
     border-radius: 25px;
     padding: 5px 7px;
